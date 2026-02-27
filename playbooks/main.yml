@@ -24,6 +24,8 @@
     aap_validate_certs: "{{ lookup('ansible.builtin.env', 'CONTROLLER_VERIFY_SSL') }}"
     aap_token: "{{ lookup('ansible.builtin.env', 'CONTROLLER_OAUTH_TOKEN') }}"
 
+    my_aap_url: "{{ aap_hostname }}"
+
   tasks:
 
     # fail with good error for Automation controller user
