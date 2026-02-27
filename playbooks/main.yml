@@ -25,6 +25,8 @@
     aap_token: "{{ lookup('ansible.builtin.env', 'CONTROLLER_OAUTH_TOKEN') }}"
 
     my_aap_url: "{{ aap_hostname }}"
+    my_ctrl_admin_password: "{{ aap_password }}"
+    my_ctrl_admin_username: "{{ aap_username }}"
 
   tasks:
 
